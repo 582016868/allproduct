@@ -1,0 +1,18 @@
+.certificate .title{
+    padding-top:50px;
+    text-align: center;
+}
+.certificate .title p:nth-child(2){
+    font-size:50px;
+    font-weight: bold;
+    letter-spacing:5px;
+}
+.certificate .title p:nth-child(3){
+    margin-top: 35px;
+    font-size:30px;
+    color:#aaa;
+}
+.certificate .title p:last-child{
+    color:#1F80BE;
+    font-size:40px;
+}

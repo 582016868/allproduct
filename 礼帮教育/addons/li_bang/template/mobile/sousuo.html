@@ -1,0 +1,89 @@
+﻿{template 'common/header'}
+<link rel="stylesheet" href="../addons/li_bang/template/public/index.css">
+<link rel="stylesheet" href="../addons/li_bang/template/public/news.css">
+<div class="content1">
+    {template 'common/li_bang_header'}
+    <!-- 新闻中心 -->
+    <div class="news main_title" style="display:block;background: #F5F5F5;">
+        <div class="new_center">
+            <ul class="type_01_news">
+                {if $news}
+                {loop $news $index $item}
+                <li>
+                    <img src="../attachment/{$item['image']}" alt="">
+                    <div class="content">
+                        <div class="title">
+                            <a href="{php echo $this->createMobileUrl('productmore')}&id={$item['id']}">{$item['title']}</a>
+                        </div>
+                        <div class="time"><img src="../attachment/images/1/2018/06/write.png" />{$item['addtime']}</div>
+                        {$item['intro']}
+                    </div>
+                </li>
+                {/loop}
+                {else}
+                <h4>对不起，该分类无任何记录</h4>
+                {/if}
+            </ul>
+            <ul class="type_02_news">
+                {if $news}
+                {loop $news $index $item}
+                <li>
+                    <img src="../attachment/{$item['image']}" alt="">
+                    <div class="content">
+                        <div class="title">
+                            <a href="{php echo $this->createMobileUrl('newsmore')}&id={$item['id']}">{$item['title']}</a>
+                        </div>
+                        <div class="time"><img src="../attachment/images/1/2018/06/write.png" />{$item['addtime']}</div>
+                        {$item['intro']}
+                    </div>
+                </li>
+                {/loop}
+                {else}
+                <h4>对不起，该分类无任何记录</h4>
+                {/if}
+            </ul>
+        </div>
+        <div class="page">{$pager}</div>
+    </div>
+
+    {template 'common/li_bang_footer'}
+</div>
+<style>
+    h4{
+        padding-top:100px;
+        margin-left:603px;
+    }
+    .news{
+        display:none;
+    }
+    .page{
+        height:102px;
+        /* margin-top:547px; */
+        /* border:1px solid red; */
+    }
+</style>
+<script>
+	$(function(){
+		$('.type_01').click(function(){
+			$('.type_01').css('color','#1F80BE');
+			$('.type_01 span').css('background-color','#1F80BE');
+			$('.type_02').css('color','#000000');
+			$('.type_02 span').css('background-color','#000000');
+			$('.type_02_news').slideUp(3000,function(){
+				$('ul.type_01_news').slideDown(3000);
+				$('ul.type_02_news').hide();
+			});
+		});
+		$('.type_02').click(function(){
+			$('.type_02').css('color','#1F80BE');
+			$('.type_02 span').css('background-color','#1F80BE');
+			$('.type_01').css('color','#000000');
+			$('.type_01 span').css('background-color','#000000');
+			$('.type_01_news').slideUp(3000,function(){
+				$('ul.type_02_news').slideDown(3000);
+				$('ul.type_01_news').hide();
+			});
+		});
+	})
+</script>
+{template 'common/footer'}

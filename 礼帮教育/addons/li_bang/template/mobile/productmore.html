@@ -1,0 +1,37 @@
+{template 'common/header'}
+<link rel="stylesheet" href="../addons/li_bang/template/public/index.css">
+<link rel="stylesheet" href="../addons/li_bang/template/public/productmore.css">
+<div class="content1">
+    {template 'common/li_bang_header'}
+    <div class="productmore">
+        <div class="content">
+        <p>
+           {$promore['content']}
+        </p>
+        </div>
+        <!--<h4>礼邦创新实验室</h4>
+        <p></p>-->
+    </div>
+    <!-- 礼邦商城开始 -->
+    <div class="mwai">
+        <div class="mall main_title" style="height: 485px;">
+            <div class="title">
+                <p></p>
+                <p>{$shop['name']}</p>
+                <p>{$shop['ename']}</p>
+                <p>一</p>
+            </div>
+            <ul>
+                 {loop $link $index $item}
+                <li>
+                    <img src="../attachment/{$item['image']}" alt="">
+                    <a href="{php echo $this->createMobileUrl('jieshao')}&action=get&id={$item['id']}"><div class="pass">点击进入 ></div></a>
+                </li>
+                {/loop}
+            </ul>
+        </div>
+    </div>
+    <!-- 礼邦商城结束 -->
+    {template 'common/li_bang_footer'}
+</div>
+{template 'common/footer'}

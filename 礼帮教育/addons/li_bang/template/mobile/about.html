@@ -1,0 +1,259 @@
+﻿{template 'common/header'}
+<link rel="stylesheet" href="../addons/li_bang/template/public/index.css">
+<link rel="stylesheet" href="../addons/li_bang/template/public/about.css">
+<div class="content1">
+    {template 'common/li_bang_header'}
+    <div class="middle main_title">
+        <!-- {$libintro['intro']} -->
+        <div class="title">
+            <p></p>
+            <p>{$libang['name']}</p>
+            <p>{$libang['ename']}</p>
+            <p>一</p>
+        </div>
+        <div class="about_us">
+            <div class="picture"><!-- 最外层部分 -->
+			    <div class="img_banner"><!-- 轮播部分 -->
+			      <ul class="imgList"><!-- 图片部分 -->
+			        {loop $libintro['image'] $index $item}
+			        <li><img src="../attachment/{$item}" alt=""></li>
+			        {/loop}
+			      </ul>
+			    </div>
+			</div>
+            <div class="intro">
+                <div class="content">
+                    {$libintro['intro']}
+                </div>
+                <p><a href="{php echo $this->createMobileUrl('aboutmore')}&id={$libintro['id']}">查看更多</a></p>
+            </div>
+        </div>
+        <!-- 企业文化 -->
+        <div class="title">
+            <p></p>
+            <p>{$det['title']}</p>
+            <p>{$det['english']}</p>
+            <p>一</p>
+        </div>
+        <div class="compan">
+            <div class="compan_left">{$det['content']}</div>
+            
+            <img src="../attachment/{$image['image']}" alt="">
+        </div>
+        <div class="title">
+            <p></p>
+            <p>主营业务</p>
+            <p>MAIN BUSSINESS</p>
+            <p>一</p>
+        </div>
+        <div class="man_bus">
+            {loop $main1 $index $ite} {php $in = $index % 2;} {if $in == 0}
+            <div class="left left_01">
+                <div class="zhuying_left"><!-- 最外层部分 -->
+				    <div class="img_banner"><!-- 轮播部分 -->
+				    {if $index == 0}
+				      <ul class="imgList_left img_left_01"><!-- 图片部分 -->
+				      	{loop $main1[0]['image'] $index $item}
+				        <li><img src="../attachment/{$item}" alt=""></li>
+				        {/loop}
+				      </ul>{/if}
+				    {if $index == 2}
+				      <ul class="imgList_left img_left_02"><!-- 图片部分 -->
+				      	{loop $main1[2]['image'] $index $item}
+				        <li><img src="../attachment/{$item}" alt=""></li>
+				        {/loop}
+				      </ul>{/if}
+				    </div>
+				</div>
+                <div class="cross"></div>
+                <div class="content">
+                    <div class="man_title">{$ite['title']}</div>
+                    <div class="con">{$ite['intro']}</div>
+                </div>
+            </div>
+            {else}
+            <div class="right right_01">
+                <div class="content">
+                    <div class="man_title">{$ite['title']}</div>
+                    <div class="con"> {$ite['intro']}</div>
+                </div>
+                <div class="cross"></div>
+                <div class="zhuying_right"><!-- 最外层部分 -->
+				    <div class="img_banner"><!-- 轮播部分 -->
+				      {if $index == 1}
+				      <ul class="imgList_right img_right_01"><!-- 图片部分 -->
+				      	{loop $main1[1]['image'] $index $item}
+				        <li><img src="../attachment/{$item}" alt=""></li>
+				        {/loop}
+				      </ul>{/if}
+				      {if $index == 3}
+				      <ul class="imgList_right img_right_02"><!-- 图片部分 -->
+				      	{loop $main1[3]['image'] $index $item}
+				        <li><img src="../attachment/{$item}" alt=""></li>
+				        {/loop}
+				      </ul>{/if}
+				    </div>
+				</div>
+            </div>
+            {/if} {/loop}
+            <div class="fork"></div>
+        </div>
+        <!-- 企业证书 -->
+        <div class="title">
+            <p></p>
+            <p>{$comcate['name']}</p>
+            <p>{$comcate['ename']}</p>
+            <p>一</p>
+        </div>
+        <div class="certifi">
+            <!-- 触摸企业证书图片放大预览 -->
+            <div class="img_enlarge_div"></div>
+            <div class="mui-slider">
+                <div class="mui-slider-group mui-slider-loop">
+                    <!--支持循环，需要重复图片节点-->
+                    {loop $company $index $item}
+                    <div class="mui-slider-item creden">
+                        <a href="{php echo $this->createMobileUrl('liebiao')}&id=7">
+                            <img class="img_certificate" src="../attachment/{$item['image']}" title="{$item['title']}" />
+                        </a>
+                    </div>
+                    {/loop}
+
+                    <!--支持循环，需要重复图片节点-->
+                </div>
+            </div>
+        </div>
+    </div>
+    {template 'common/li_bang_footer'}
+</div>
+<style>
+	/*关于礼邦轮播*/
+        .picture, .img_banner, .imgList, .imgList>li, .imgList img{margin: 0;padding: 0; font-size: 0;}
+	    .imgList_left, .imgList_right, .imgList_left img, .imgList_right img{margin: 0;padding: 0; font-size: 0;}
+	    ul,li{list-style: none;}
+	    .img_banner{position:relative;width: 100%;height: 100%;overflow: hidden;}
+	    .imgList, .imgList_left, .imgList_right{position:relative;width:5000px;height:100%;z-index: 10;overflow: hidden;}
+	    .imgList li, .imgList_left li, .imgList_right li{float:left;display: inline; height: 100%;}
+	    .imgList li img, .imgList_left li img, .imgList_right li img{width: 100%; height: 100%;}
+	    
+	    
+    .news {
+        display: none;
+    }
+
+    .compan .left {
+        width: 69% !important;
+    }
+
+    .compan .right {
+        width: 30% !important;
+    }
+
+    .compan .content p {
+        font-size: 0.8rem !important;
+    }
+
+    .certifi .mui-slider::after {
+        clear: both;
+    }
+
+    .img_enlarge_div {
+        max-width: 60%;
+        max-height: 37rem;
+        position: absolute;
+        margin-top: -40%;
+        left: 27%;
+        float: left;
+        display: none;
+        overflow: scroll;
+        /*border: solid 2px #000000;*/
+    }
+</style>
+<!--关于礼邦轮播-->
+<script type="text/javascript">
+	//	图片轮播
+	zhuying_roll(".imgList li", '.picture', ".imgList");
+	zhuying_roll(".img_left_01 li", '.zhuying_left', ".img_left_01");
+//	zhuying_roll(".img_left_02 li", '.zhuying_left', ".img_left_02");
+	zhuying_roll(".img_right_01 li", '.zhuying_right', ".img_right_01");
+	zhuying_roll(".img_right_02 li", '.zhuying_right', ".img_right_02");
+	
+	function zhuying_roll(li_li, ddiv, lli) {
+		//当前index
+		var curIndex = 0, 
+		//图片总数
+		imgLen = $(li_li).length; 
+		var img_width = $(ddiv).width();
+		$(li_li).width(img_width);
+		var autoChange = setInterval(function() {
+			if(curIndex < imgLen - 1) {
+				curIndex++;
+			} else {
+				curIndex = 0;
+			}
+			//调用变换处理函数
+			changeTo(curIndex, img_width, lli);
+		}, 3000);
+	}
+	
+	function changeTo(num, img_width, lli) {
+		var goLeft = num * img_width;
+		$(lli).animate({ left: "-" + goLeft + "px" }, 1500);
+	}
+	
+	// 主营业务轮播 左 02
+	var curIndex_left_02 = 0, 
+//	imgLen_left_02 = $(".img_left_02 li").length; 
+	imgLen_left_02 = 4;
+	var img_width_left = $('.zhuying_left').width();
+	$('.imgList_left li').width(img_width_left);
+	var autoChange = setInterval(function() {
+		if(curIndex_left_02 < imgLen_left_02 - 1) {
+			curIndex_left_02++;
+			console.log(curIndex_left_02, ' ***左02 的总数：',imgLen_left_02)
+		} else {
+			curIndex_left_02 = 0;
+		}
+		changeToLeft_02(curIndex_left_02);
+	}, 3000);
+	
+	function changeToLeft_02(num) {
+		var img_width_left = $('.zhuying_left').width();
+		var goLeft_left_02 = num * img_width_left;
+		$(".img_left_02").animate({ left: "-" + goLeft_left_02 + "px" }, 1500);
+	}
+</script>
+
+<!--企业证书轮播-->
+<script>
+    var gallery = mui('.mui-slider');
+    gallery.slider({
+        interval: 3000//自动轮播周期，若为0则不自动播放，默认为0；
+    });
+    $('.img_certificate').mousemove(function (e) {
+        // var xx = e.originalEvent.x || e.originalEvent.layerX || 0;
+        // var size = 10 * $('.img_certificate').width();
+        var yy = e.originalEvent.y || e.originalEvent.layerY || 0;
+        $(".img_certificate").mouseover(function (event) {
+            var _target = $(event.target);
+            if (_target.is('img')) {
+                $('.img_enlarge_div img').remove();
+                $(".img_enlarge_div").show();
+                $(".img_enlarge_div").css({ "z-index": 10 });
+                $("<img id='img_enlarge' src='" + _target.attr("src") + "'>").css({
+                    "width": '100%'
+                }).appendTo($(".img_enlarge_div"));
+                /*将当前所有匹配元素追加到指定元素内部的末尾位置。*/
+            }
+        })
+        $("body").mouseout(function (event) {
+            var _target = $(event.target);
+            if (!_target.is('img')) {
+                $(".img_enlarge_div").css({ "z-index": -10 });
+                $("#img_enlarge").remove();/*移除元素*/
+                $(".img_enlarge_div").hide();
+            }
+        })
+
+    });
+</script> {template 'common/footer'}

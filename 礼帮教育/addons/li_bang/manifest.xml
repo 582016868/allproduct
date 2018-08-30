@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns="http://www.we7.cc" versionCode="">
+	
+	<application setting='false'>
+		<name><![CDATA[礼邦教育]]></name>
+
+		<identifie><![CDATA[li_bang]]></identifie>
+
+		<version><![CDATA[1.0]]></version>
+
+		<ability><![CDATA[礼邦教育]]></ability>
+
+		<type><![CDATA[enterprise]]></type>
+
+		<description><![CDATA[礼邦教育]]></description>
+
+		<author><![CDATA[hanbaoge]]></author>
+
+		<url><![CDATA[http://wx.hbg168.com]]></url>
+
+		<setting><![CDATA[]]></setting>
+
+	</application>
+
+	
+	<platform>
+		<handles>
+
+			<message type="text" />
+			<message type="image" />
+			<message type="voice" />
+			<message type="video" />
+			<message type="shortvideo" />
+			<message type="location" />
+			<message type="link" />
+			<message type="subscribe" />
+			<message type="qr" />
+			<message type="trace" />
+			<message type="click" />
+			<message type="merchant_order" />
+			<message type="user_get_card" />
+			<message type="user_del_card" />
+			<message type="user_consume_card" />
+		</handles>
+
+		<rule embed="false" />
+
+		<rule embed="false" />
+
+	<supports>
+
+			<item type="app" />
+	</supports>
+
+	</platform>
+
+	
+	<bindings>
+
+		<cover>
+			<entry title="首页入口" do="index" state="i" direct="" />
+		</cover>
+
+		<menu>
+			<entry title="轮播图" do="slide" state="s" direct="" />
+			<entry title="导航栏" do="cate" state="c" direct="" />
+			<entry title="简介" do="intro" state="c" direct="" />
+			<!-- <entry title="详情" do="detail" state="c" direct="" /> -->
+			<entry title="预约" do="order" state="c" direct="" />
+			<entry title="礼邦商城" do="shop" state="c" direct="" />
+		</menu>
+
+	</bindings>
+
+	<install><![CDATA[]]></install>
+	<uninstall><![CDATA[]]></uninstall>
+	<upgrade><![CDATA[]]></upgrade>
+</manifest>

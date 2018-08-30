@@ -1,0 +1,83 @@
+﻿{template "common/header"}
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">添加商城</button> -->
+<div class="panel panel-primary" style="margin-top:10px;">
+    <div class="panel-heading">
+        <h3 class="panel-title">商城列表</h3>
+    </div>
+    <div class="panel-body">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>序号</th>
+                    <th>商城名</th>
+                    <th>图片</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                {loop $image $index $item}
+                <tr class="active">
+                    <td>{$item['id']}</td>
+                    <td>{$item['name']}</td>
+                    <td>
+                        <img src="../attachment/{$item['image']}" alt="" width="100px">
+                    </td>
+                    <td>
+                    <a href="{php echo $this->createWebUrl('shop');}&action=editimg&id={$item['id']}" class="btn btn-primary btn-xs">编辑图片</a>
+                        <a href="{php echo $this->createWebUrl('shop');}&action=edit&id={$item['id']}" class="btn btn-primary btn-xs">编辑内容</a>
+                          
+                    </td>
+                </tr>
+                {/loop}
+            </tbody>
+        </table>
+    </div>
+</div>
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">添加/更新商城</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" role="form" action="{php echo $this->createWebUrl('shop');}&action=save" method="post">
+                    <div class="form-group">
+                        {php echo tpl_form_field_image('image',$image['image']);}
+                    </div>
+                    <div class="form-group">
+                        <label for="name">产品介绍</label>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="3" name="link"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-success">添加/更新</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal -->
+</div>
+<style>
+    .uploader-modal {
+        z-index: 1050;
+    }
+</style>
+<script>
+    $('.edit').click(function () {
+        var id = $(this).attr('id');
+        var link = $(this).attr('link');
+        var image = $(this).attr('image');
+        var input = '<input type="hidden" name="id" value="' + id + '" class="form-control">';
+        $('form').prepend(input);
+        $("input[name='image']").val(image);
+        $("textarea[name='link']").val(link);
+    });
+</script>
+{template "common/footer"}

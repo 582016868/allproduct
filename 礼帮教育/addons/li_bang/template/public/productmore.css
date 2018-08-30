@@ -1,0 +1,29 @@
+.productmore{
+    width:100%;
+    background: #fff;
+    margin-top:-37px;
+    padding-top:63px;
+    padding-bottom:20px;
+}
+.productmore .content{
+    width:80%;
+    margin:50px auto 0 auto;
+}
+.productmore .content .subject {
+	color: #2489CB !important;
+	font-size: 2rem !important;
+	margin-bottom: 50px !important;
+}
+.productmore .content .text p{
+	text-align: justify;
+	text-align-last: left;
+	line-height: 2em;
+  	font-size:1rem;
+}
+.productmore .title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #619DCB;
+    letter-spacing: 3px;
+}

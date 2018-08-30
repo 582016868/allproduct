@@ -1,0 +1,29 @@
+﻿{template "common/header1"}
+<script type="text/javascript" charset="utf-8" src="../addons/li_bang/template/public/ueditor/ueditor.config.js"></script>
+<script type="text/javascript" charset="utf-8" src="../addons/li_bang/template/public/ueditor/ueditor.all.min.js"> </script>
+<script type="text/javascript" charset="utf-8" src="../addons/li_bang/template/public/ueditor/lang/zh-cn/zh-cn.js"></script>
+<script type="text/javascript" src="./resource/js/lib/jquery-1.8.3.min.js"></script>
+<form role="form" action="{php echo $this->createWebUrl('intro');}&action=detail" method="post">
+    <input type="hidden" name="detailid" value="{$detail['id']}">
+    <input type="hidden" name="introid" value="{$introid}">
+    <div class="form-group">
+        <label for="name">标题</label>
+        <input type="text" name="title" value="{$detail['title']}" class="form-control" id="name" placeholder="请输入标题">
+    </div>
+    <div class="form-group">
+        <label for="name">英文标题</label>
+        <input type="text" name="english" value="{$detail['english']}" class="form-control" id="name" placeholder="请输入英文标题">
+    </div>
+    <div class="form-group">
+        <label for="name">详情</label>
+        <script id="editor" type="text/plain" name="content" style="width:910px;height:500px;">{$detail['content']}</script>
+        <!-- {php echo tpl_ueditor('content',$detail['content']);} -->
+    </div>
+    <button type="submit" class="btn btn-default">提交</button>
+</form>
+<!-- 3.实例化编辑器 -->
+<script type="text/javascript">
+    //实例化编辑器
+    //建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
+    var ue = UE.getEditor('editor');
+</script> {template "common/footer"}

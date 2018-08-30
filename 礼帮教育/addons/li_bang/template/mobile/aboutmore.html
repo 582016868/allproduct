@@ -1,0 +1,30 @@
+{template 'common/header'}
+<link rel="stylesheet" href="../addons/li_bang/template/public/index.css">
+<link rel="stylesheet" href="../addons/li_bang/template/public/aboutmore.css">
+<div class="content1">
+    {template 'common/li_bang_header'}
+    <div class="aboutmore main_title">
+        <div class="title">
+            <p></p>
+            <p>{$detail['title']}</p>
+            <p>{$detail['english']}</p>
+            <p>一</p>
+        </div>
+        <div class="content" id="con">
+             {$detail['content']}
+        </div>
+        <!-- <div class="tu">
+            <img src="../addons/li_bang/template/public/a1.jpg" alt="">
+        </div> -->
+    </div>
+    {template 'common/li_bang_footer'}
+</div>
+<style>
+    .news {
+        display: none;
+    }
+</style>
+<script>
+    
+</script>
+{template 'common/footer'}

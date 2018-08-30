@@ -1,0 +1,45 @@
+{template 'common/header'}
+<link rel="stylesheet" href="../addons/li_bang/template/public/index.css">
+<link rel="stylesheet" href="../addons/li_bang/template/public/news.css">
+<div class="content1">
+    {template 'common/li_bang_header'} 
+    <div class="newsmore">
+        <div class="content">
+             {$newsmore['content']}
+        </div>
+        <div class="goback">
+            <div class="prev">
+                 {if $next}
+                <div class="shang"><a href="{php echo $this->createMobileUrl('newsmore')}&id={$next[0]['id']}">< 前一篇</a></div>
+                <div class="xia">{$next[0]['title']}</div>
+                {else}
+                <div class="shang">
+                    <a href="">
+                        < 前一篇</a>
+                </div>
+                <div class="xia">无</div>
+                {/if}
+            </div>
+            <div class="next">
+                 {if $prev}
+                <div class="shang">
+                    <a href="{php echo $this->createMobileUrl('newsmore')}&id={$prev[0]['id']}">后一篇 ></a>
+                </div>
+                <div class="xia">{$prev[0]['title']}</div>
+                {else}
+                <div class="shang">
+                    <a href="">后一篇 ></a>
+                </div>
+                <div class="xia">无</div>
+                {/if}
+            </div>
+        </div>
+    </div>
+    {template 'common/li_bang_footer'}
+</div>
+<style>
+    .news{
+        display:none;
+    }
+</style>
+{template 'common/footer'}

@@ -1,0 +1,48 @@
+.aboutmore{
+    width:100%;
+    background:#fff;
+    /* position: relative; */
+    /* top:-60px; */
+    padding-bottom:50px; 
+}
+.aboutmore .title{
+    padding-top:70px;
+    text-align: center;
+}
+.aboutmore .title p:nth-child(2){
+    font-size:50px;
+    font-weight: bold;
+    letter-spacing:5px;
+}
+.aboutmore .title p:nth-child(3){
+    margin-top: 35px;
+    font-size:30px;
+    color:#aaa;
+}
+.aboutmore .title p:last-child{
+    color:#1F80BE;
+    font-size:80px;
+}
+.aboutmore .content{
+	overflow: hidden;
+    width:80%;
+    margin:30px auto;
+}
+.aboutmore .content img {
+	max-width: 80%;
+}
+.aboutmore .content p img{
+	/* margin-left: 10px; */
+}
+
+.bottom{
+    margin-top:-69px;
+}
+@media screen and (max-width: 600px) {
+    .aboutmore{
+        top:-496px;
+    }
+    .bottom{
+        margin-top: -1250px;
+    }
+}

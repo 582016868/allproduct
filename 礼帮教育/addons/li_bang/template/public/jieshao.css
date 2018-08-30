@@ -1,0 +1,84 @@
+.content1 .content1_title {
+    width: 20%;
+    margin: 70px auto 50px;
+    text-align: center;
+}
+.content1 .content1_title h4 {
+    margin: 10px 0;
+    color: #CCCCCC;
+}
+.content1 .content1_line {
+    margin: 0 auto;
+    width: 50px;
+    height: 2px;
+    background-color: #2489CB;
+}
+.content1 .content1_line_02 {
+    margin: 0 auto;
+    width: 50px;
+    height: 2px;
+    background-color: #fff;
+}
+.content1 form {
+    width: 100%;
+    margin: 0 auto;
+}
+.content1 form textarea {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    border: solid 1px #2489CB;
+}
+.content1 .content1_form {
+    width: 85%;
+    margin: 50px auto 70px;
+}
+.content1 .content1_form .content1_img {
+    width: 30%;
+    height: 370px;
+    text-align: center;
+    margin-left: 10px;
+    padding: 130px 0;
+    /* color: #FFFFFF; */
+    background: url(content1_img.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: inline-block;
+}
+.content1 .content1_form .content1_img h2 {
+	color: #fff;
+}
+.content1 .content1_form .content1_img h4 {
+    margin: 20px 0;
+    color: #fff;
+}
+.content1 .content1_form .content1_input {
+    width: 66%;
+    float: right;
+    text-align: right;
+    margin-top: 15px;
+    margin-left: 20px;
+    padding-right: 20px;
+}
+.content1 .content1_form .content1_input::after{
+    clear: both;
+}
+.content1 .content1_form .content1_input span {
+    width: 20%;
+    display: inline-block;
+}
+.content1 .content1_form .content1_input .content1_input_text input {
+    width: 70%;
+    margin-top: 30px;
+}
+.content1 .content1_form .content1_input .content1_btn {
+    width: 100px;
+    height: 35px;
+    border-radius: 20px;
+    display: block;
+    margin-top: 20px;
+    margin-left: 450px;
+  	border:solid;
+    background-color: #2489CB;
+    color: #fff;
+}

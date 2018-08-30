@@ -1,0 +1,19 @@
+﻿{template "common/header"}
+<form class="form-horizontal" role="form" action="{php echo $this->createWebUrl('shop');}&action=save" method="post">
+    <input type="hidden" name="id" value="{$image['id']}">
+    <input type="hidden" name="image1" value="{$image['image']}">
+    <div class="form-group">
+        <label for="name">商城名</label>
+        <input type="text" name="name" value="{$image['name']}" class="form-control" id="name" placeholder="请输入标题">
+    </div>
+    <div class="form-group">
+        <label for="firstname">图片</label>
+            {php echo tpl_form_field_image('image',$image['image']);}
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-success">更新</button>
+        </div>
+    </div>
+</form>
+{template "common/footer"}

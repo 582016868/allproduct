@@ -1,0 +1,1241 @@
+﻿.clear{
+    clear:both;
+}
+.news{
+	padding-top: 70px;
+    width:100%;
+}
+.news_bottom{
+	padding-top: 30px;
+	padding-bottom: 70px;
+}
+.main_title .title p:nth-child(2){
+	font-size: 2.5rem !important;
+}
+.main_title .title p:nth-child(3) {
+    margin-top: 1.5rem !important;
+    font-size: 1.3rem !important;
+}
+.main_title .title p:last-child {
+    font-size: 4rem !important;
+    margin-top: -0.9rem !important;
+}
+.news .title{
+    padding-bottom: 30px;
+    text-align: center;
+}
+.news .title p:nth-child(2){
+    font-size:50px;
+    font-weight: bold;
+    letter-spacing:5px;
+}
+.news .title p:nth-child(3){
+    margin-top: 35px;
+    font-size: 30px;
+    color:#aaa;
+}
+.news .title p:last-child{
+    margin-top: -10px;
+    color:#1F80BE;
+    font-size:80px;
+}
+.navs{
+    display: none;
+}
+.new_center{
+    width:82%;
+    margin:0 auto;
+    overflow: hidden;
+}
+.new_center .more{
+    width:10%;
+    height:40px;
+    margin:0px auto;
+	margin-top: 30px;
+    text-align: center;
+    line-height: 40px;
+    border:1px solid #1F80BE;
+    border-top: 2px solid #1F80BE;
+    color: #1F80BE;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.new_center .more span{
+	background-color: #1F80BE;
+	display: inline-block;
+	color: #fff;
+	width: 1em;
+	height: 1em;
+	line-height: 16px;
+	border-radius: 50%;
+}
+.new_center ul{
+    width:100%;
+    margin:0 auto;
+    overflow: hidden;
+}
+.new_center ul li{
+    width:43.6%;
+    height:200px;
+    float:left;
+    margin-left:50px;
+    list-style-type: none;
+    border: solid 10px #F5F5F5;
+}
+.new_center ul li img{
+    width:40%;
+    height:100%;
+}
+.new_center ul li .content{
+    width:60%;
+    height:100%;
+    padding: 10px;
+    background: #fff;
+    float: right;
+    overflow: hidden;
+    color: #88888c;
+    font-family: "Microsoft YaHei";
+}
+.new_center ul li .content p,
+.new_center ul li .content span {
+	color: #88888c;
+    font-family: "Microsoft YaHei";
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    overflow: hidden;
+    text-align: justify;
+}
+.new_center ul li .content .title {
+	text-align: left;
+	padding-bottom: 0;
+	height: 1.4rem;
+	overflow: hidden;
+}
+.new_center ul li .content .title a{
+    text-decoration: none;
+    text-align: left;
+    color:#333335;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.new_center ul li .content .title a:hover{
+	text-decoration: underline;
+}
+.new_center ul li .content .time{
+  	font-size: 1.2rem;
+    padding:10px 0 0 2px;
+    color: #B999B9;
+}
+.new_center ul li .content .time img{
+	width: 1.2em;
+	height: 1.2em;
+	margin-right: 10px;
+}
+.new_center ul li .content p.time_down_div {
+	text-indent:2em;
+	text-align: justify;
+	text-align-last: left;
+	padding-top: 5px;
+}
+/* 顶部开始 */
+.top{
+    /* width:1903px; */
+    width:100%;
+    /* border:1px solid red; */
+    height:100px;
+    position: relative;
+    background: #1F80BE;
+}
+.top .logo{
+    padding-left:8%;
+    padding-top:18px;
+    width:30%;
+}
+.top .logo img{
+    height: 87px;
+    top: -12px;
+    position: relative;
+}
+.top .company{
+    position: absolute;
+    left:31%;
+    top:20px;
+    margin-left:-15px;
+}
+.top .company .com1{
+    letter-spacing:4px;
+    font-size: 20px;
+    font-weight: bold;
+  margin-top:-10rpx;
+    color:white;
+    /* border:1px solid red; */
+}
+.top .company .com2{
+    font-size: 20px;
+    font-weight: bold;
+    color:white;
+    /* border:1px solid red; */
+    margin-top:15px;
+}
+.research{
+    position: absolute;
+    left:68%;
+    top:30px;
+}
+.research input{
+    width:165%;
+}
+.research .img{
+    width: 20px;
+    position: absolute;
+    top: 10px;
+    left: 145%;
+}
+/* 顶部结束 */
+/* 导航开始 */
+.banner{
+    width:100%;
+    height: 60px;
+    z-index:2;
+    position: relative;
+    top:-546px;
+    background:rgba(98, 160, 200, 0.6);
+    /* border:1px solid red; */
+}
+.banner ul{
+    width:80%;
+    height:60px;
+    line-height: 60px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+/* .banner ul li:first-child a{
+    height:54px;
+    display:block;
+    border-bottom:5px solid #000;
+} */
+/* .banner ul li:first-child a:visited{
+    text-decoration:underline;
+    color:black;
+} */
+.banner ul li{
+    list-style-type: none;
+    float:left;
+    margin-left:5.3%;
+}
+.banner ul .bn{
+    color:#fff;
+    height:54px;
+    display:block;
+    text-decoration: none;
+    font-size:20px;
+    font-weight: bold;
+}
+ .banner ul .toop{
+        color:#000;
+        height: 54px;
+        font-weight: bold;
+        border-bottom:5px solid #000;
+    }
+/* .banner ul li a:link{
+    color:white;
+}
+.banner ul li a:visited{
+    color:white;
+} */
+.banner ul a:hover{
+    height:54px;
+    display:block;
+    border-bottom:5px solid #000;
+    color:black;
+}
+/* 导航结束 */
+/* 轮播图开始 */
+.viewpager{
+    height:660px;
+}
+.viewpager img{
+    width:100%;
+}
+.bai{
+    /* height: 40px; */
+    /* background: #fff; */
+    margin-top:-62px;
+}
+/* 轮播图结束 */
+/* 产品与服务开始 */
+.content1{
+    width:100%;
+    /* border:1px solid red; */
+}
+.content1 .product{
+    width:100%;
+    background:#F5F5F5;
+    /* border:1px solid red; */
+    padding-top:80px;
+    padding-bottom:70px;
+}
+.product .title{
+    text-align: center;
+}
+.product .title p:nth-child(2){
+    font-size:2.5rem;
+    font-weight: bold;
+    letter-spacing:5px;
+}
+.product .title p:nth-child(3){
+    margin-top: 1.5rem;
+    font-size:1.3rem;
+    color:#aaa;
+}
+.product .title p:last-child{
+    color:#1F80BE;
+    font-size:4rem;
+  	margin-top: -0.5rem;
+}
+.product .service{
+    width:90%;
+    margin:0px auto;
+    /* border:1px solid red; */
+}
+.product .service li{
+    /* border:1px solid red; */
+        height: 15rem;
+    width:44%;
+    float:left;
+    margin-top:4%;
+    list-style-type: none;
+    margin-left:5%;
+    position: relative;
+}
+/* .product .service li:nth-child(2){
+    margin-left:250px;
+}
+.product .service li:nth-child(4){
+    margin-left:304px;
+}
+.product .service li:nth-child(6){
+    margin-left:304px;
+} */
+.product .service li .img{
+    width: 64%;
+    float:left;
+}
+.product .service li .img img{
+    width:100%;
+    height:14rem;
+}
+.product .service li .model{    
+    width:36%;
+    height: 14rem;
+    background: #6CAAD2;
+    float:left;
+}
+.product .service li .model p:first-child{
+    color:#fff;
+    font-size:16px;
+    text-align: center;
+    margin-top: 30%;
+    font-family: "Microsoft YaHei";
+    font-weight: bold;
+    letter-spacing:5px;
+}
+.product .service li .model p:last-child{
+    width:52%;
+    height:30px;
+    line-height: 30px;
+    margin:0px auto;
+    border:1px solid white;
+    text-align: center;
+}
+.product .service li .model p a:visited{
+    color:white;
+}
+/* 产品与服务结束 */
+/* 关于礼邦开始 */
+.me{
+    width: 100%;
+    background: #F5F5F5;
+}
+.ritual{
+    width:100%;
+    margin: 0 auto;
+    height:37.5rem;
+    background: #fff;
+}
+.ritual .back{
+    height:33.5rem;
+    background:#6CAAD2;
+    position:relative;
+    top:15%;
+  	padding-top:3rem;
+}
+.ritual .back .intro{
+    width:40%;
+    height:70%;
+    position: relative;
+    margin-left: 10%;
+}
+.ritual .back .intro .title{
+    color:#fff;
+    font-size: 1.4rem;
+    font-family: "Microsoft YaHei";
+    font-weight: bold;
+    letter-spacing:4px;
+}
+.ritual .back .intro .line{
+    width: 7rem;
+    height: 1%;
+    background: #1F80BE;
+    margin-top:1%;
+    margin-left: 0.5%;
+}
+.ritual .back .intro .content{
+    width:108%;
+    height: 19.7rem;
+    font-size: 1rem;
+    font-family: "Microsoft YaHei";
+    color:#fff;
+    letter-spacing:2px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 12;
+    overflow: hidden;
+    line-height: 1.7rem;
+    margin-top:1.7rem;
+    font-weight: bold;
+    text-align: justify;
+    text-align-last: left;
+    /* border:1px solid red; */
+}
+.ritual .back .intro .more{
+    width:22%;
+    height:2.5rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.9rem;
+    letter-spacing:2px;
+    line-height: 2.5rem;
+    border:1px solid #1F80BE;
+    position: relative;
+    left: 88%;
+    top:1rem;
+}
+.ritual .back .intro .more a {
+    height: 2.5rem;
+    line-height: 2.5rem;    
+}
+.ritual .back .intro .more a:visited{
+    color:#1F80BE;
+}
+.ritual .back .intro .more .arrow {
+    width: 1.1rem;
+    height: 1.1rem;
+    display: inline-block;
+    line-height: 1.1rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    padding-left: 2px;
+    background-color: #1F80BE;
+}
+.ritual .back .picture{
+    width:40%;
+    height:600px;
+    position: relative;
+    top:-27rem;
+    left:60%;
+}
+.ritual .back .picture img{
+    width:100%;
+  	height:32rem;
+}
+/* 关于礼邦结束 */
+/* 客户案例开始 */
+.customer{
+    padding-top:1.5rem;
+  	padding-bottom:2.5rem;
+    background: #F5F5F5;
+}
+.customer .title{
+    margin-top: 80px;
+    text-align: center;
+}
+.customer .title p:nth-child(2){
+    font-size:2.5rem;
+    font-weight: bold;
+    letter-spacing:5px;
+}
+.customer .title p:nth-child(3){
+    margin-top: 1.5rem;
+    font-size:1.3rem;
+    color:#aaa;
+}
+.customer .title p:last-child{
+    color:#1F80BE;
+    font-size:4rem;
+	margin-top: -0.5rem;
+}
+/*================================================*/
+/*.customer .block{
+     border:1px solid red; 
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+    padding-left: 100px;
+    display: block;
+}
+.customer .block li{
+    width:450px;
+    height:360px;
+    float:left;
+    margin-left:85px;
+    margin-top:30px;
+    list-style-type: none;*/
+    /* border:1px solid red; */
+/*}
+.customer .block li img{
+    width:500px;
+    height:300px;
+}
+.customer .block li .img {
+    position: relative;
+}
+.customer .block li .img img{
+    width:498px;
+    height:298px;
+}
+.customer .block li .img p {
+    width:280px;
+    height:60px;
+    margin:0 auto;
+    font-weight: bold;
+    font-size:30px;
+    text-align: center;
+    position: relative;
+    display: block;
+    line-height: 60px;
+    letter-spacing:5px;
+    border-top:2px solid #FFFFFF;
+    border-bottom:2px solid #FFFFFF;
+    background-color: rgba(182,182,182,0.5);
+    color:#000000;
+}
+.customer .block li:hover .more{
+    display:block;
+}
+.customer .block .more{
+    width:500px;
+    height:300px;
+    border: none;
+    display: none;
+    z-index: 10;*/
+    /* background: rgba(77,142,201,0.5); */
+    /*position: relative;
+    top:-321px;
+}
+.customer .block .more .con{
+    width:260px;
+    height:37px;
+    line-height: 37px;
+    text-align: center;
+    border-top:1px solid #fff;
+    border-bottom:1px solid #fff;
+    position:relative;
+    left:110px;
+    top:80px;
+}*/
+/* .customer .block .more p:first-child{
+    width:280px;
+    height:60px;
+    margin:0 auto;
+    font-size:20px;
+    margin-top:59px;
+    line-height: 60px;
+    letter-spacing:5px;
+    border-top:1px solid #FFFFFF;
+    border-bottom:1px solid #FFFFFF;
+    color:#fff;
+} */
+/*.customer .block .more a:visited{
+    color:rgb(226, 23, 23);
+}
+.customer .block .more a{
+    width:120px;
+    height:33px;
+    color:#000;
+    text-decoration: none;
+    display: block;
+    border:1px solid #1F809E;
+    font-size:20px;
+    position: relative;
+    left:170px;
+    top:200px;
+    background-color: rgba(182,182,182,0.5);
+}
+.customer .block .more a:hover{
+    background: #1F80BE;
+    border:1px solid #1F80BE;
+}
+.customer .block .more .check{
+    width:90px;
+    height:30px;
+    line-height: 30px;
+    text-align: center;
+}*/
+/* 客户案例结束 */
+/* 礼邦商城开始 */
+.mwai{
+    background:#fff;
+    position: relative;
+    width: 100%;
+    margin-top: 70px;
+    /*border: solid 1px black;*/
+}
+.mall{
+    margin:0 auto;
+    width:100%;
+    background: #fff;
+     /*border:1px solid red;*/ 
+     padding-bottom: 80px;
+}
+.mall .title{
+	padding: 50px 0 0px;
+    text-align: center;
+    background: #fff;
+    border: none;
+}
+.mall .title p:nth-child(2){
+    display: block;
+    margin: 0 auto;
+    font-size:2.5rem;
+    font-weight: bold;
+    letter-spacing:5px;
+}
+.mall .title p:nth-child(3){
+    margin-top: 1.5rem;
+    font-size:1.3rem;
+    color:#aaa;
+}
+.mall .title p:last-child{
+    margin-top: -0.5rem;
+    color:#1F80BE;
+    font-size:4rem;
+}
+.mall ul{
+    padding-top:30px;
+    padding-left:5%;
+    height:200px;
+}
+.mall ul li{
+    width:20%;
+    height:200px;
+    margin-left:2%;
+    float:left;
+    list-style-type:none;
+}
+.mall ul li img{
+    width:100%;
+    height:130px;
+}
+
+.mall a{
+    width:45%;
+    height:30px;
+    text-align: center;
+    margin-top:10px;
+    display: block;
+    line-height: 30px;
+    color:#1F80BE;
+    border:1px solid #1F80BE;
+    margin:0 auto;
+}
+.mall .oa{
+    position: relative;
+    height:100px;
+}
+.mall .oa .email{
+    width:80px;
+    height:80px;
+    position: relative;
+    left:500px;
+    /*border:1px solid #1F80BE;*/ 
+}
+.mall .oa .email .ema{
+    height:40px;
+    /* color:white; */
+    font-size: 18px;
+    line-height: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    /* background: #1F80BE; */
+    letter-spacing:5px;
+}
+.mall .oa .email .sys{
+    height:40px;
+    /* color:#000; */
+    font-size: 18px;
+    cursor: pointer;
+    line-height: 35px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing:0px;
+}
+.mall .oa .menu{
+    width:700px;
+  margin:0 auto;
+    /*position: relative;
+    left:666px;
+    top:-54px;*/
+     /*border:1px solid red;*/ 
+}
+.mall .oa .menu .sub{
+    position: relative;
+    top:-7px;
+    left:30px;
+}
+.mall .oa .menu #name{
+        width:260px;
+     }
+     .mall .oa .menu #pass{
+        width:260px;
+     }
+/* 礼邦商城结束 */
+/* 底部导航开始 */
+.bottom{
+    background: #252525;
+    padding: 32px 0;
+    overflow: hidden;
+}
+.bottom .contain{
+    width:78%;
+    overflow: hidden;
+    margin:0 auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.bottom .contact{
+    width:18%;
+    float:left;
+    font-weight: bold;
+}
+.bottom .contact .line{
+    position: relative;
+    top:20px;
+    border:1px solid #aaa;
+}
+.bottom .contact .title{
+    color:#fff;
+    font-size:1rem;
+    font-weight: bold;
+}
+.bottom .contact .address{
+    margin-top:-5px;
+}
+.bottom .contact .address i{
+    display: inline-block;
+    width:18px;
+    height:26px;
+    background-image: url('./contact.png');
+}
+.bottom .contact .address .content{
+    display: inline-block;
+    color:#57696B;
+}
+.bottom .contact .address .detail{
+    width:87%;
+    display: inline-block;
+    position: relative;
+    left:30px;
+    color:#aaa;
+}
+.bottom .contact .address .detail a:link{
+     color:#57696B;
+}
+.bottom .our{
+    width:10%;
+    float:left;
+    font-weight: bold;
+}
+.bottom .our .title{
+    color:#fff;
+    font-size:1rem;
+    font-weight: bold;
+}
+.bottom .our .line{
+    position: relative;
+    top:20px;
+    border:1px solid #aaa;
+}
+.bottom .our .address{
+    margin-top:11px;
+    position: relative;
+    top:28px;
+    display: flex;
+    justify-content: flex-start;
+}
+.bottom .our .address i{
+    display: inline-block;
+    width:6px;
+    height:6px;
+    background: #aaa;
+    border-radius: 10px;
+    margin-top: 7px;
+    margin-right: 4px;
+}
+.bottom .our .detail{
+    display:inline-block;
+}
+.bottom .our .detail a:visited{
+    color:#aaa;
+}
+.bottom .product1{
+    height:260px;
+    width:10%;
+    float:left;
+    font-weight: bold;
+}
+.bottom .code{
+    width:10% !important;
+    font-weight: bold;
+}
+.bottom .product1 .title{
+    position: relative;
+    left:0px;
+    color:#fff;
+    font-size:1rem;
+    font-weight: bold;
+}
+.bottom .product1 .line{
+    position: relative;
+    top:20px;
+    left:0px;
+    border:1px solid #aaa;
+}
+.bottom .product1 .address{
+    margin-top:11px;
+    position: relative;
+    top:28px;
+    display: flex;
+    justify-content: flex-start;
+}
+.bottom .product1 .address i{
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: #aaa;
+    border-radius: 10px;
+    margin-right: 4px;
+    margin-top: 7px;
+}
+.bottom .product1 .detail{
+    display:inline-block;
+}
+.bottom .product1 .detail a:visited{
+    color:#57696B;
+} 
+.bottom .product1,.our,.code,.contact{
+    margin-left:1%;
+}
+.bottom .code{
+    float:left;
+    margin-top:40px;
+}
+.bottom .code .title{
+    color:#aaa;
+    font-size:0.8rem;
+    text-align: center;
+}
+.copy{
+    text-align: center;
+}
+.page{
+    margin: 0 auto;
+    padding-bottom: 20px;
+    display: inline-block;
+}
+
+@media screen and (max-width: 600px) {
+    .top .logo{
+        padding-left:10px;
+    }
+    .top .logo img{
+        width:100px;
+    }
+    .top .company{
+        position: absolute;
+        left:10px;
+        top:50px;
+    }
+    .top .company .com1{
+        width:180px;
+        height:20px;
+        font-size:1px;
+    }
+    .top .company .com2{
+        width:180px;
+        height:20px;
+        font-size:1px;
+        letter-spacing:1px;
+    }
+    .top .research{
+        position: absolute;
+        left:180px;
+        top:65px;
+    }
+    .top .research input{
+        width:190px;
+        height:10px;
+    }
+    .top .research .img{
+        width:30px;
+        height:20px;
+        position: absolute;
+        top:1px;
+        left:158px;
+    }
+    .banner{
+        height:30px;
+    }
+    .banner ul{
+        margin:0 auto;
+        padding-left:5px;
+        width:100%;
+        height:100%;
+        margin-left:0px;
+    }
+    .banner ul li{
+        height:100%;
+        line-height: 30px;
+        margin-left:8px;
+    }
+    .banner ul li:first-child a{
+        font-size:1px;
+        border-bottom:0px solid red;
+    }
+    .banner ul li a{
+        font-size:1px;
+        border-bottom:0px solid red;
+    }
+    .banner ul li a:hover{
+        height:54px;
+        display:block;
+        border-bottom:0px solid #000;
+        color:black;
+    }
+    .bai{
+        position: relative;
+        top:-511px;
+    }
+    .product{
+        height:600px;
+        position: relative;
+        top:-550px;
+    }
+    .product .title{
+        text-align: center;
+    }
+    .product .title p:nth-child(2){
+        font-size:1px;
+        font-weight: bold;
+        letter-spacing:5px;
+    }
+    .product .title p:nth-child(3){
+        font-size:1px;
+        margin-top:-10px;
+        color:#aaa;
+    }
+    .product .title p:last-child{
+        margin-top:-13px;
+    }
+    .product .service{
+        width:100%;
+    }
+    .product .service li .model{
+        width: 40%;
+        height:100%;
+        line-height:0px;
+    }
+    .product .service li{
+        width:100%;
+        margin-top:3px;
+        margin-left:0px;
+        clear:both;
+    }
+    .product .service li .model p:first-child{
+        font-size: 1px;
+    }
+    .product .service li .model p:last-child{
+        width:90px;
+        height:30px;
+        line-height: 30px;
+        font-size: 1px;
+    }
+    .product .service li .img{
+        width:60%;
+        height:132px;
+    }
+    .product .service li .img img{
+        width:100%;
+        height:132px;
+    }
+    .ritual{
+        width:100%;
+        height:656px;
+        margin-top:-270px;
+        border:1px solid #AAAAAA;
+    }
+    .ritual .back{
+        height:800px;
+        margin-top:-70px;
+    }
+    .ritual .back .intro{
+        width:100%;
+        margin-left:0px;
+        position: relative;
+        top:9px;
+    }
+    .ritual .back .intro .title{
+        font-size: 16px;
+    }
+    .ritual .back .intro .line{
+        width:26%;
+    }
+    .ritual .back .intro .content{
+        height:306px;
+        width:99%;
+        position: relative;
+        top:-586px;
+        left:8px;
+        overflow:hidden;
+        letter-spacing:3px;
+        line-height: 20px;
+        font-size: 3px;
+    }
+    .ritual .back .picture{
+        height:100px;
+        position: absolute;
+        top:378px;
+        left:0px;
+    }
+    .ritual .back .picture img{
+        width:373px;
+        height:233px;
+    }
+    .ritual .back .intro .more{
+        font-size: 1px;
+        width:92px;
+        height:30px;
+        line-height:30px;
+        position: relative;
+        left:278px;top:-592px;
+    }
+    .customer .title{
+        margin-top:-20px;
+        text-align: center;
+    }
+    .customer .title p:nth-child(2){
+        font-size:1px;
+        font-weight: bold;
+        letter-spacing:5px;
+    }
+    .customer .title p:nth-child(3){
+        font-size:1px;
+        margin-top:-10px;
+        color:#aaa;
+    }
+    .customer .title p:last-child{
+        margin-top:-13px;
+    }
+    .customer .block{
+        margin-top:1px;
+    }
+    .customer .block ul li{
+        width:112%;
+        margin-left:-41px;
+        margin-top:-40px;
+        clear:both;
+    }
+    .customer .block ul li img{
+        width:100%;
+    }
+    .customer .block ul li .more{
+        position: relative;
+        top:-251px;
+        left:1px;
+        width:414px;
+        height:251px;
+    }
+    .customer .block .more .con{
+        position: relative;
+        left:85px;
+    }
+    .customer .block .more a{
+        position: relative;
+        left:168px;
+    }
+    .mall{
+        height:1092px;
+        position: relative;
+        top:754px;
+    }
+    .mall .title{
+        margin-top:-20px;
+        text-align: center;
+    }
+    .mall .title p:nth-child(2){
+        font-size:1px;
+        font-weight: bold;
+        letter-spacing:5px;
+    }
+    .mall .title p:nth-child(3){
+        font-size:1px;
+        margin-top:-10px;
+        color:#aaa;
+    }
+    .mall .title p:last-child{
+        margin-top:-13px;
+    }
+    .mall .oa{
+        height:182px;
+        position: relative;
+        top:617px;
+        left:0px;
+    }
+    .mall .oa .email{
+        position: relative;
+        left:9px;
+        z-index: 2;
+    }
+    .mall .oa .email .ema{
+        background: #fff;
+        color:#fff;
+        z-index:2;
+        position: relative;
+        top:-603px;
+    }
+    .mall .oa .email .sys{
+        position: relative;
+        top:-580px;
+    }
+    .mall .oa .email .pho{
+        width:80px;
+        height:40px;
+        position: relative;
+        z-index: 1;
+        top:-81px;
+        background: #1F80BE;
+    }
+    .mall .oa .menu{
+        position: relative;
+        top:-619px;
+        left:101px;
+    }
+     .mall .oa .menu #name{
+        width:260px;
+     }
+     .mall .oa .menu #pass{
+        width:260px;
+     }
+    .mall .oa .menu .sub{
+        position: relative;
+        left:118px;
+    }
+    .mall ul li img{
+        width:345px;
+    }
+    .mall ul li a{
+        position: relative;
+        left:-14px;
+    }
+    .bottom{
+        height:675px;
+        position: relative;
+        top:755px;
+        left:0px;
+    }
+    .bottom .contact{
+        position: relative;
+        left:66px;
+        top:251px;
+    }
+    .bottom .our{
+        position: relative;
+        left:66px;
+        top:-191px;
+    }
+    .bottom .product{
+        position: relative;
+        left:230px;
+        top:-374px;
+    }
+    .bottom .code{
+        position: relative;
+        left:146px;
+        top:-190px;
+    }
+    .copy{
+        font-size:1px;
+        position: relative;
+        top:757px;
+    }
+    .news{
+        margin-top:-524px; 
+        
+    }
+    .news .title p:nth-child(2){
+        font-size: 12px;
+    }
+    .news .title p:nth-child(3){
+        font-size: 12px;
+    }
+    .news .title{
+        padding-top:0px;
+        text-align: center;
+    }
+    .new_center{
+        width:100%;
+        height:1400px;
+        margin:0 auto;
+    }
+    .new_center ul{
+        width:100%;
+        height:665px;
+        margin:0 auto;
+    }
+    .new_center ul li{
+        width:110%;
+        height:200px;
+        float:left;
+        margin-left:-38px;
+        margin-top:20px;
+        list-style-type: none;
+    }
+    .new_center ul li img{
+        width:40%;
+        height:100%;
+    }
+    .new_center ul li .content{
+        width:60%;
+        height:100%;
+        background: #fff;
+        float: right;
+    }
+    .new_center ul li .content .title a{
+        text-decoration: none;
+        color:#333335;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .new_center ul li .content .time{
+        padding:10px 0 0 10px;
+    }
+    .new_center ul li .content p{
+        text-indent:2em;
+        padding:0px 10px 10px 10px;
+    }
+}

@@ -1,0 +1,98 @@
+﻿{template 'common/header'}
+<link rel="stylesheet" href="../addons/li_bang/template/public/index.css">
+<link rel="stylesheet" href="../addons/li_bang/template/public/product.css">
+<div class="content1">
+    {template 'common/li_bang_header'}
+    <!-- 客户案例 -->
+    <div class="service main_title">
+        <div class="title">
+            <p></p>
+            <p>{$libintro['name']}</p>
+            <p>{$libintro['ename']}</p>
+            <p>一</p>
+        </div>
+        <div class="navigate client_nav">
+            <ul>
+                 {if $_GET['pid']}
+                <li class="nav">
+                    <a href="{php echo $this->createMobileUrl('liebiao')}&id=6">所有服务</a>
+                </li>
+                {else}
+                <li class="nav active">
+                    <a href="{php echo $this->createMobileUrl('liebiao')}&id=6" class="action">所有服务</a>
+                </li>
+                {/if} {loop $proserver $index $item} {if $_GET['pid'] == $item['id']}
+                <li class="nav active">
+                    <a href="{php echo $this->createMobileUrl('liebiao')}&id={$item['pid']}&pid={$item['id']}" class="action">{$item['name']}</a>
+                </li>
+                {else}
+                <li class="nav">
+                    <a href="{php echo $this->createMobileUrl('liebiao')}&id={$item['pid']}&pid={$item['id']}">{$item['name']}</a>
+                </li>
+                {/if} {/loop}
+            </ul>
+        </div>
+        <div class="all_server main_title client_p">
+            <ul>
+                {loop $all $index $item}
+                <a href="{php echo $this->createMobileUrl('productmore')}&id={$item['id']}">
+                    <li>
+                        <img src="../attachment/{$item['image']}" alt="">
+                        <div class="title" style="padding-top:50px;">{$item['title']}</div>
+                        <div class="line"></div>
+                        <div class="content">{$item['intro']}</div>
+                    </li>
+                </a>
+                {/loop}
+            </ul>
+        </div>
+        <div style="text-align:center;"><div class="page" style="margin-top:-30px;">{$pager}</div></div>
+    </div>
+	<!-- 新闻中心 -->
+	 <div class="news news_bottom main_title">
+	    <div class="title">
+	        <p></p>
+	        <p>{$new['name']}</p>
+	        <p>{$new['ename']}</p>
+	        <p>一</p>
+	    </div>
+	    <div class="new_center">
+	        <ul>
+				{if $news}
+                {loop $news $index $item}
+                <li>
+                    <img src="../attachment/{$item['image']}" alt="">
+                    <div class="content">
+                        <div class="title">
+                            <a href="{php echo $this->createMobileUrl('newsmore')}&id={$item['id']}">{$item['title']}</a>
+                        </div>
+                        <div class="time"><img src="../attachment/images/1/2018/06/write.png" />{$item['addtime']}</div>
+                        <p>{$item['intro']}</p>
+                    </div>
+                </li>
+                {/loop}
+                {else}
+                <h4>对不起，该分类无任何记录</h4>
+                {/if}
+	        </ul>
+	        <a href="{php echo $this->createMobileUrl('liebiao')}&id=8">
+	            <div class="more">
+	            	查看更多 <span>></span>
+	            </div>
+	        </a>
+	    </div>
+	</div> 
+    {template 'common/li_bang_footer'}
+</div>
+<style>
+  .client_p p{
+  	font-size:1rem !important;
+  }
+</style>
+<script>
+    var gallery = mui('.mui-slider');
+    gallery.slider({
+        interval: 1000//自动轮播周期，若为0则不自动播放，默认为0；
+    });
+</script>
+{template 'common/footer'}

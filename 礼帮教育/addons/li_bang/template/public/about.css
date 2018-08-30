@@ -1,0 +1,503 @@
+﻿.middle{
+    background: #fff;
+    padding-bottom: 50px;
+    position: relative;
+    top:-55px;
+}
+.middle .title{
+    margin-top: 40px;
+    padding-top:50px;
+    text-align: center;
+}
+.middle .title p:nth-child(2){
+    font-size:50px;
+    font-weight: bold;
+    letter-spacing:5px;
+}
+.middle .title p:nth-child(3){
+    margin-top: 35px;
+    font-size:30px;
+    color:#aaa;
+}
+.middle .title p:last-child{
+    color:#1F80BE;
+    font-size:80px;
+}
+.bai{
+    display:none;
+}
+.about_us{
+    width:80%;
+    height:403px;
+    margin:0 auto;
+    margin-top:80px;
+}
+.about_us .picture{
+    width:40%;
+    height:400px;
+}
+.about_us .intro{
+    width:62%;
+    height:300px;
+    position: relative;
+    top:-351px;
+    left:40%;
+    background: rgba(104,169,211,0.8);
+}
+.about_us .intro .content{
+    width: 90%;
+    height: 14rem;
+    font-size: 1rem;
+    font-family: "Microsoft YaHei";
+    color: #fff;
+    letter-spacing: 2px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 12;
+    overflow: hidden;
+    line-height: 1.7rem;
+    margin-top: 1.7rem;
+    font-weight: bold;
+    text-align: justify;
+/*    text-align-last: left;*/
+    margin: 0 auto;
+    padding-top: 1.7rem;
+}
+.about_us .intro a{
+    color: #1E80BD;
+    width: 13%;
+    height: 2rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.9rem;
+    line-height: 2rem;
+    border: 1px solid #1F80BE;
+    position: absolute;
+    left: 82%;
+    padding-left: 0.5rem;
+    bottom: 19px;
+}
+.about_us .intro .content a{
+    color: #1E80BD;
+    width: 13%;
+    height: 2rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.9rem;
+    line-height: 2rem;
+    border: 1px solid #1F80BE;
+    position: absolute;
+    left: 82%;
+    padding-left: 0.5rem;
+    bottom: 9px;
+}
+.about_us .intro .content .about_us_content {
+    height: 78%;
+    overflow: hidden;
+}
+.compan{
+    width:80%;
+    height:368px;
+    margin:0 auto;
+    margin-top:80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.compan_left{
+    width:70%;
+    height:368px;
+}
+.compan_left p:nth-child(3),
+.compan_left p:nth-child(5),
+.compan_left p:nth-child(7) {
+    display: -webkit-box !important;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+}
+.compan img {
+    margin-left: 10px;
+    margin-top: 40px;
+}
+.left{
+    width:70%;
+    height:368px;
+    float:left;
+}
+.compan .com_title{
+    font-size:18px;
+    font-weight: bold;
+    text-align: center;
+    color:#1E80BF;
+}
+.compan .content span{
+    display: inline-block;
+    width:40px;
+    height:40px;
+    color:#fff;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+    position: relative;
+    top:42px;
+    text-align: justify;
+    background: #1E80BD;
+}
+.compan .content p{
+    display: inline-block;
+    font-size: 15px;
+    font-family: "Microsoft YaHei";
+    padding-left:60px;
+}
+.right{
+    width:30%;
+    height:368px;
+    float:left;
+}
+.right .idea{
+    width:80%;
+    height:60%;
+    position: relative;
+    top:12%;
+    left:10%;
+    background: #1E80BD;
+}
+.right .idea .specil{
+    width:80%;
+    height:70%;
+    position: relative;
+    top:24%;
+    left:13%;
+}
+.right .idea .specil p{
+    color:#fff;
+    font-size:16px;
+    margin-top:25px;
+    font-family: "Microsoft YaHei";
+}
+/* “关于礼邦”界面“主营业务” */
+/* 整体 */
+.man_bus{
+    width:80%;
+    height: 1650px;
+    position: relative;
+    margin:60px auto 30px;
+}
+.man_bus div{
+    margin-bottom: 40px;
+}
+.man_bus .left .zhuying_left,
+.man_bus .left div,
+.man_bus .right div,
+.man_bus .right .zhuying_right{
+    float: left;
+}
+.man_bus div::after,
+.man_bus .zhuying_left::after,
+.man_bus .zhuying_right::after{
+    clear: both;
+}
+.man_bus .left,
+.man_bus .right{
+    width: 100%;
+}
+.man_bus .cross{
+    width:7%;
+    height:3px;
+    background: #207FBF;
+    position: relative;
+    top: 49%;
+}
+.man_bus .left .zhuying_left{
+    width:46%;
+    height:358px;
+    position: relative;
+    left: 3.5%;
+    border: solid;
+} 
+.man_bus .left .cross{
+    left: 3.5%;
+}
+.man_bus .right .zhuying_right{
+    width:46%;
+    height:358px;
+    position: relative;
+    left: 12.5%;
+    border: solid;
+} 
+.man_bus .right .cross{
+    left: 12.3%;
+}
+.man_bus .content{
+    width: 30%;
+    height: 75%;
+    position: relative;
+    padding: 10px;
+    /* overflow: hidden; */
+}
+.man_bus .left .content{
+    left: 5%;
+}
+.man_bus .right .content{
+    left: 10%;
+}
+.man_bus .content .man_title{
+    font-size:1.7rem;
+    color:#207FBF;
+    font-weight: bold;
+    letter-spacing:4px;
+    margin-bottom: 35px;
+}
+.man_bus .content .con{
+    font-size: 0.9rem;
+    font-weight: bold;
+    color:#454648;
+    line-height: 1.8em;
+    text-align: justify;
+    text-align-last: left;
+}
+.man_bus .fork{
+    width: 0;
+    height: 101%;
+    border: 2px solid #519CCC;
+    position: absolute;
+    left: 49.3%;
+    top: -2%;
+    margin: 0 auto;
+}
+/* 局部 */
+.man_bus .left_01 .content{
+    top: 15%;
+}
+.man_bus .right_01 .content{
+    top: 12%;
+}
+.man_bus .left_02 .content{
+    top: 20%;
+    height: 60%;
+}
+.man_bus .right_02 .content{
+    top: 12%;
+}
+/* “关于礼邦”界面中“企业证书” */
+.certifi{
+    width:80%;
+    height:16rem;
+    margin:0 auto;
+    position: relative;
+    margin-top: 30px;
+}
+.mui-slider .mui-slider-group .creden{
+        max-width: 30%;
+        display: inline-block;
+        margin-left: 7rem;
+    }
+    .mui-slider .mui-slider-group .creden img{
+        width: auto;
+ 		height: 15rem !important;
+ 		display: inline-block;
+ 		line-height: 15rem;
+ 		vertical-align: middle;
+    }
+	.mui-slider .mui-slider-group .mui-slider-item>a:not(.mui-control-item) {
+		text-align: center;
+	}
+	.mui-slider .mui-slider-group .mui-slider-item {
+		width: auto !important;
+	}
+@media screen and (max-width: 600px) {
+    .middle{
+        background: #fff;
+        position: relative;
+        top:-560px;
+    }
+    .banner{
+        position: relative;
+        top:-660px;
+    }
+    .middle .title{
+        padding-top:3px;
+        text-align: center;
+    }
+    .middle .title p:nth-child(2){
+        font-size:1px;
+        font-weight: bold;
+        letter-spacing:5px;
+    }
+    .middle .title p:nth-child(3){
+        font-size:1px;
+        margin-top:-10px;
+        margin-left:-3px;
+        color:#aaa;
+    }
+    .middle .title p:last-child{
+        color:#1F80BE;
+         margin-top:-10px;
+         margin-left:-3px;
+        font-size:40px;
+    }
+    .bai{
+        display:none;
+    }
+    .about_us{
+        width:100%;
+        height:592px;
+        margin-top:10px;
+    }
+    .about_us img{
+        width:200px;
+        height:100px;
+        margin:0 auto;
+        position: relative;
+        top:491px;
+        z-index:100;
+    }
+    .about_us .intro{
+        width:100%;
+        height:592px;
+        position: relative;
+        top:-101px;
+        left:0px;
+        background: rgba(104,169,211,0.8);
+    }
+    .about_us .intro .content{
+        width:80%;
+        height:80%;
+        position: absolute;
+        left:10%;
+        top:2%;
+        text-indent: 2em;
+    }
+    .about_us .intro .content p{
+        font-size:1px;
+        color:#fff;
+    }
+    .compan{
+        width:60%;
+        height:777px;
+        margin:0 auto;
+        margin-top:17px;
+    }
+    .left{
+        width:100%;
+        clear: both;
+    }
+    .compan .com_title{
+        font-size:18px;
+        font-weight: bold;
+        
+        color:#1E80BF;
+    }
+    .compan .content span{
+        display: inline-block;
+        width:40px;
+        height:40px;
+        color:#fff;
+        text-align: center;
+        line-height: 40px;
+        font-size: 25px;
+        position: relative;
+        top:42px;
+        background: #1E80BD;
+    }
+    .compan .content p{
+        display: inline-block;
+        font-size: 10px;
+        font-family: "Microsoft YaHei";
+        padding-left:60px;
+    }
+    .right{
+        width:100%;
+        height:368px;
+        clear: both;
+    }
+    .right .idea{
+        width:100%;
+        height:60%;
+        position: relative;
+        top:46%;
+        left:0;
+        background: #1E80BD;
+    }
+    .right .idea .specil{
+        width:90%;
+        height:70%;
+        position: relative;
+        top:24%;
+        left:9%;
+    }
+    .right .idea .specil p{
+        color:#fff;
+        font-size:16px;
+        margin-top:25px;
+        font-family: "Microsoft YaHei";
+    }
+    .man_bus{
+        width:100%;
+    }
+    .man_bus .first{
+        margin-top:30px;
+        height:164px;
+    }
+    .man_bus .first img{
+        width:206px;
+        height:164px;
+    }
+    .man_bus .first .content{
+        width:50%;
+        margin-right:0px;
+        clear:both;
+    }
+    .man_bus .first .content .man_title{
+        margin-top:0px;
+        font-size: 1px;
+    }
+    .man_bus .first .content .con{
+        margin-top:3px;
+        font-size: 1px;
+    }
+    .man_bus .second{
+        margin-top:30px;
+        height:164px;
+    }
+    .man_bus .second .content{
+        width:50%;
+        margin-right:0px;
+        clear:both;
+    }
+    .man_bus .second img{
+         width:50%;
+        height:100%;
+    }
+    .man_bus .second .content .man_title{
+        margin-top:0px;
+        font-size: 1px;
+    }
+    .man_bus .second .content .con{
+        margin-top:3px;
+        font-size: 1px;
+    }
+    .cross{
+        display:none;
+    }
+    .fork{
+        display:none;
+    }
+    .mui-slider .mui-slider-group .creden{
+        margin-right:23px;
+        width:26.5%;
+    }
+    .mui-slider .mui-slider-group .creden img{
+        width:300px;
+        height:109px;
+    }
+    .bottom{
+        position: relative;
+        top:-559px;
+    }
+    .copy{
+        position: relative;
+        top:-561px;
+    }
+}

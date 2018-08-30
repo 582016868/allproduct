@@ -1,0 +1,232 @@
+.service{
+    width:100%;
+    background: #fff;
+    position: relative;
+top:25px;
+}
+.service .title{
+    padding-top:55px;
+    text-align: center;
+}
+.service .title p:nth-child(2){
+    font-size:50px;
+    font-weight: bold;
+    letter-spacing:5px;
+}
+.service .title p:nth-child(3){
+    margin-top: 35px;
+    font-size:30px;
+    color:#aaa;
+}
+.service .title p:last-child{
+    color:#1F80BE;
+    font-size:80px;
+}
+.navigate{
+    width:100%;
+    height:50px;
+    margin-top: 30px;
+    text-align: center;
+}
+.navigate .nav a{
+    color:#000;
+}
+.navigate ul{
+    display: inline-block;
+    height:45px;
+    margin:0 auto;
+}
+.navigate ul li{
+    height:45px;
+    line-height: 45px;
+    font-size:1.2rem;
+    display: inline-block;
+    color:#000;
+    text-align: center;
+    margin-right: 1.1rem;
+    font-weight: bold;
+    list-style-type: none;
+    padding:0 1rem;
+    border:2px solid #D4D4D4;
+    border-radius: 25px;
+    float:left;
+}
+.navigate ul .active{
+    background:#2489CB;
+}
+.navigate ul .action{
+    color:#fff;
+}
+.service .all_server{
+    width:80%;
+    overflow: hidden;
+    margin:40px auto;
+}
+.service .all_server ul{
+    width:100%;
+    margin:0 auto;
+}
+.service .all_server li{
+    width:28%;
+    margin-left:3.5%;
+    margin-top:20px;
+    border:1px solid #F1F1F1;
+    list-style-type: none;
+    float:left;
+}
+.service .all_server li img{
+    width:100%;
+    height:14rem;
+}
+.service .all_server li .title{
+    width:70%;
+    font-size:1rem;
+    position: relative;
+    top:-34px;
+    left:54px;
+    color:#000;
+}
+.service .all_server li .line{
+    width:80%;
+    height:2px;
+    position: relative;
+    top:-19px;
+    left:35px;
+    background: #DEDEDE;
+}
+.service .all_server li .content{
+    width: 80%;
+    height: 80px;
+    margin: 0 auto 15px;
+    color: #8B8B8C;
+    font-size: 0.9rem;
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    font-family: "Microsoft YaHei";
+}
+.all_server .content p {
+    color: rgb(127, 127, 127);
+    font-family: "Microsoft YaHei";
+}
+
+@media screen and (max-width: 600px) {
+    .service{
+        width:100%;
+        background: #fff;
+        position: relative;
+        top:-497px;
+    }
+    .service .title{
+        padding-top:1px;
+        text-align: center;
+    }
+    .service .title p:nth-child(2){
+        font-size:2px;
+        font-weight: bold;
+        letter-spacing:5px;
+    }
+    .service .title p:nth-child(3){
+        font-size:2px;
+        color:#aaa;
+    }
+    .service .title p:last-child{
+        color:#1F80BE;
+        font-size:40px;
+    }
+    .navigate{
+        display:none;
+    }
+    .service .all_server{
+        width:100%;
+        height:2303px;
+        margin-top:0px;
+    }
+    .service .all_server ul{
+        width:100%;
+        height:2303px;
+        margin:0 auto;
+    }
+    .service .all_server li{
+        width:88%;
+        height:352px;
+        margin-left:0px;
+        margin-top:20px;
+        border:1px solid #F1F1F1;
+        list-style-type: none;
+        clear:both;
+    }
+    .service .all_server li img{
+        width:100%;
+        height:311px;
+    }
+    .service .all_server li .title{
+        width:70%;
+        font-size:16px;
+        position: relative;
+        top:2px;
+        left:45px;
+        color:#000;
+    }
+    .service .all_server li .line{
+        width:80%;
+        height:1px;
+        position: relative;
+        top:13px;
+        left:35px;
+        background: #DEDEDE;
+    }
+    .service .all_server li .content{
+        width:80%;
+        margin:22px auto;
+        color:#8B8B8C;
+    }
+    .mui-slider .mui-slider-group .creden{
+        height:27px;
+        width:26.5%;
+        text-align: center;
+        border:1px solid #EEEEEE;
+    }
+    .mui-slider .mui-slider-group .creden a{
+        color:#000;
+    }
+    .mui-slider .mui-slider-group .mui-slider-item>a:not(.mui-control-item){
+        line-height: 23px;
+    }
+    .navs{
+        display:block;
+    }
+    
+    .small{
+        width:100%;
+        height:100%;
+        border:1px solid #eee;
+    }
+    .active{
+        background: #1F80BE;
+        color:#fff;
+    }
+    .navs{
+        display: block;
+    }
+    
+    .bottom{
+        top:633px;
+    }
+    .bottom .contact{
+        top:-529px;
+    }
+    .bottom .our{
+        top:-515px;
+    }
+    .bottom .product{
+        top:-478px;
+    }
+    .bottom .code{
+        top:-536px;
+    }
+    .copy{
+        top:637px;
+    }
+}
